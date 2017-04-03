@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BioniX | Comunidad de videojuegos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/tether.min.css" />
+    <link rel="stylesheet" href="assets/css/tether-theme-basic.css" />
+
+
+    <link rel="stylesheet" href="assets/css/remodal.css" />
+    <link rel="stylesheet" href="assets/css/remodal-default-theme.css" />
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <!-- IE 9 support -->
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+    <nav>
+      <div id="buttons">
+        <button id="dropdown"><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 3vh;color: #FFF"></i></button>
+
+                                      <!--              Botones extra               -->
+        <!--
+        <button class="dropdown-button"><i class="fa fa-user" aria-hidden="true" style="font-size: 2vh;color: #FFF"></i></button>
+        <button class="dropdown-button"><i class="fa fa-tachometer" aria-hidden="true" style="font-size: 2vh;color: #FFF"></i></button>
+        -->
+
+      </div>
+    </nav>
+
+    <section id="poster">
+
+        <div id="poster-content">
+            <img id="logo" src="assets/img/logo.png" alt="">
+            <div id="poster-text">
+                <h1>Saca tu lado más competitivo y enfréntate a los mejores jugadores españoles</h1>
+                <h3>¡Bienvenido a Bionix! En un futuro muy próximo, tendrás la oportunidad unirte a nuestra comunidad gaming y de participar en nuestros torneos y eventos.</h3>
+            </div>
+            <button onclick="showNewsletterModal();">Descubre más</button>
+            <div id="social-media-icons">
+                <a href="https://www.facebook.com/bionix.es/" target="_blank"><img class="sm-icon" src="assets\img\social-media\facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/bionix_es" target="_blank"><img class="sm-icon" src="assets\img\social-media\twitter.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img class="sm-icon" src="assets\img\social-media\youtube.png" alt="Youtube"></a>
+                <a href="#" target="_blank"><img class="sm-icon" src="assets\img\social-media\twitch.png" alt="Twitch"></a>
+                <a href="#" target="_blank"><img class="sm-icon" src="assets\img\social-media\steam.png" alt="Steam"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ventana modal para suscribir al newsletter -->
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Suscríbete al newsletter</h1>
+        <p>
+            Así podrás estar al tanto de todas nuestras novedades. Solemos informar de cómo va el avance del proyecto de esta manera.
+        </p>
+        <div class="form-group">
+            <label for="exampleInputEmail1"><strong>Tu dirección de correo electrónico</strong></label>
+            <input type="email" class="form-control" id="newsletterEmailTF" aria-describedby="emailHelp" placeholder="Introduce tu email">
+            <small id="emailHelp" class="form-text text-muted">Te prometemos que no la compartiremos con nadie.</small>
+        </div>
+        <br>
+
+        <div class="alert alert-success hidden" role="alert" id="subscribe_success">
+            <strong>¡Genial!</strong> Te has sucrito al newsletter. Recibirás noticias nuestras en breves.
+        </div>
+        <div class="alert alert-warning hidden" role="alert" id="subscribe_empty">
+            <strong>¡Cuidado!</strong> Por favor, introduce tu dirección de correo electrónico.
+        </div>
+        <div class="alert alert-danger hidden" role="alert" id="subscribe_error">
+            <strong>¡Error!</strong> Ha ocurrido un error al suscribirte al newsletter. ¿Quizás ya estés suscrito?
+        </div>
+        <button data-remodal-action="cancel" class="remodal-cancel">Cancelar</button>
+        <button class="remodal-confirm" id="subscribeBT">Suscribirme</button>
+    </div>
+
+
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.min.js" charset="utf-8"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/remodal.min.js"></script>
+
+
+
+</body>
+
+</html>
